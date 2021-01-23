@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #container {
+            display: grid;
+            max-width: 90%;
+            grid-template-columns: repeat(5, 1fr);
+
+
+            gap: 20px;
+            flex-wrap: wrap;
+            
+        }
+
+        .slika {
+            width: 150px;
+            height: 100px;
+
+
+            background-color: #6da3d9;
+            border-radius: 5px 5px 0px 0px;
+              
+            
+
+
+        }
+
+        img {
+            width: 150px;
+
+
+        }
+        p{
+            margin:0;
+        }
+
+        .kontejner {
+            max-width: 150px;
+            max-height: 115px;
+            text-align: center;
+
+            border-radius: 5px 5px 0px 0px;
+            font-size: small;
+            box-shadow: inset 0px 0px 0.2px 0px grey;}
+
+
+
+        
+
+
+
+
+        @media screen and (min-width: 768px) {
+
+            #h2 {
+                grid-column: 1/6;
+                grid-row: 1/2;
+            }
+
+            #tekst {
+                grid-column: 1/6;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #container {
+                grid-template-columns: repeat(2, 1fr);
+
+
+            }
+
+            #h2 {
+                grid-column: 1/4;
+            }
+
+            #tekst {
+                grid-column: 1/4;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            #container {
+                grid-template-columns: repeat(1, 1fr);
+
+
+
+
+            }
+
+            .kontejner {
+                margin: 0 auto;
+            }
+
+            #h2 {
+                grid-column: 1/2;
+                margin: 0 auto;
+            }
+
+            #tekst {
+                grid-column: 1/2;
+            }
+        }
+
+        h2 {
+            font-weight: normal;
+        }
+
+        #tekst {
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="h2">
+            <h2>Gallery Heading</h2>
+        </div>
+
+
+
+
+
+        <div class="kontejner" id="slika1">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika2">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika3">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika4">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika5">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika6">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika7">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika8">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika9">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+            </div>
+            <p>Image Title</p>
+        </div>
+        <div class="kontejner" id="slika10">
+            <div class="slika"> <img src="placeholder-image.png" alt="text">
+
+
+
+            </div>
+            <p>Image Title</p>
+
+        </div>
+        <div id="tekst">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae,
+                justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                semper
+                nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                enim.
+                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                laoreet.</p>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
